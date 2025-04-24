@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="script.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 900px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f1f1f1;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Additional Styling for Attractiveness */
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills li, .projects li, .feedback li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skills li::before, .projects li::before, .feedback li::before {
+            content: '•';
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            p, ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Welcome to My Portfolio</header>
+
+    <section id="about">
+        <h2>Self Introduction</h2>
+        <p>Hello! I'm <strong>Smaran</strong>, a passionate software developer specialized in web development, problem-solving, and AI-driven applications.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java, Python, JavaScript</li>
+            <li>Web Development (HTML, CSS, React, Flask)</li>
+            <li>Machine Learning & AI</li>
+            <li>Database Management (MongoDB, SQL)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Work Experience</h2>
+        <ul>
+            <li><strong>AI Chatbot (Gemma LLM)</strong> - <a href="https://github.com/yourgithub/chatbot" target="_blank">GitHub Link</a></li>
+            <li><strong>MERN Data Transfer</strong> - <a href="https://github.com/yourgithub/cybersecurity" target="_blank">GitHub Link</a></li>
+            <li><strong>Code Generation & Debugging Web App</strong> - <a href="https://github.com/yourgithub/code-gen" target="_blank">GitHub Link</a></li>
+        </ul>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback & Achievements</h2>
+        <ul>
+            <li>LeetCode Contest Top 10% (743, 763 Questions Solved)</li>
+            <li>Developed an optimized LLM backend using Codellama & Flask</li>
+            <li>Recognized as a top problem solver in competitive programming</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education Profile</h2>
+        <p><strong>Bachelor's in Computer Science</strong></p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:smaran@example.com">smaran@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">https://github.com/yourgithub</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Smaran | All Rights Reserved
+    </footer>
+
+</body>
+</html>
